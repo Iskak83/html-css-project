@@ -44,7 +44,7 @@ header {
   align-items: center;
 }
 
-a {
+.links a {
   text-decoration: none;
   font-size: 16px;
   color: #151515;
@@ -53,4 +53,14 @@ a {
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0;
+  padding-bottom: 4px;
+  border-bottom: solid 3px white;
+  transition: 0.25s;
+}
+#home-link {
+  border-bottom-color: #756aee;
+}
+/* #home-link, */
+.nav-links:hover {
+  border-bottom-color: #756aee;
 }
