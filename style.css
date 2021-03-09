@@ -64,3 +64,26 @@ header {
 .nav-links:hover {
   border-bottom-color: #756aee;
 }
+
+.btn {
+  color: #ffffff;
+  background-color: #756aee;
+  border: solid 1px #756aee;
+  padding: 4px;
+}
+
+.banner-container {
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.banner-image {
+  width: 80%;
+}
+
+.banner-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
