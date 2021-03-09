@@ -86,7 +86,7 @@ header {
 
 .all-services-cards {
   margin-left: 150px;
-  width: 600px;
+  width: 570px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
