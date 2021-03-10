@@ -1,7 +1,15 @@
+:root {
+  --primary: #7569EE;
+  --secondary: #282736;
+  --text-secondary: #9B9B9B;
+  --bg: #1B1929;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 body {
@@ -19,6 +27,13 @@ header {
   background-color: white;
   box-shadow: 1px 1px 2px rgb(226, 222, 223);
 }
+
+
+
+.secondary-txt {
+  color: var(--text-secondary)
+}
+
 #top-navbar {
   width: 100%;
   height: 55px;
@@ -63,4 +78,64 @@ header {
 /* #home-link, */
 .nav-links:hover {
   border-bottom-color: #756aee;
+}
+
+/** ***************************************** */
+/** Layout                                    */
+/** ***************************************** */
+.container, 
+.row { 
+  display: flex;
+}
+
+.col{
+  flex-direction: column;
+  flex: 1;
+}
+
+/** ***************************************** */
+/** Text                                      */
+/** ***************************************** */
+ul{
+  list-style-type: none;
+}
+
+.txt-caps{
+  text-transform: uppercase;
+}
+
+/** ***************************************** */
+/** Buttons                                   */
+/** ***************************************** */
+.btn{
+  border: none;
+}
+
+.btn-primary{
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/** ***************************************** */
+/** Footer                                    */
+/** ***************************************** */
+footer, footer a {
+  background-color: var(--bg);
+  color: #ffffff;
+}
+
+footer h3 {
+  color: var(--text-secondary)
+}
+
+.company-info--title{
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+form>input.form-input,
+form>textarea.form-input{
+  background: var(--secondary);
+  border: none;
+  padding: 8px;
 }
