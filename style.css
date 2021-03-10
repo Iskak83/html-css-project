@@ -8,7 +8,12 @@
 *::after {
   box-sizing: border-box;
 }
-
+a:focus {
+  outline: none !important;
+}
+*:focus {
+  outline: none;
+}
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
@@ -97,15 +102,21 @@ header {
   width: 47%;
   box-shadow: 0.5px 0.5px 5px rgb(227, 223, 223);
   display: flex;
+  padding-top: 30px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
+}
+.main-card {
+  padding-top: 0px;
+  justify-content: center;
 }
 .all-services-card h3,
 p {
   font-size: 32px;
   font-weight: 500;
+  margin: 0 20px;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
   color: #151515;
@@ -156,14 +167,16 @@ p {
   background: #756aee;
   transition: all 0.3s ease;
 }
-#bttn-all-services {
+
+.link-bttn {
+  position: relative;
   color: azure;
-  background-color: #756aee;
+  overflow: hidden;
+  display: inline-block;
   min-width: 200px;
   padding: 17px 33px 15px;
   font-size: 14px;
   line-height: 1.34;
-  border: 2px solid;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
@@ -176,6 +189,48 @@ p {
   vertical-align: middle;
   user-select: none;
 }
+.all-services-bttn,
+.all-services-bttn:focus {
+  color: white;
+  background-color: #756aee;
+  border-color: #756aee;
+}
+
+.all-services-bttn:hover,
+.all-services-bttn:active {
+  color: white;
+  background-color: #151515;
+  border-color: #151515;
+}
+
+.all-services-bttn.bttn::before {
+  background-color: #151515;
+}
+
+.bttn {
+  position: relative;
+  z-index: 0;
+  transition: background-color 0.4s, border-color 0.4s, color 0.2s;
+}
+.bttn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  background: #756aee;
+  z-index: -1;
+  opacity: 0;
+  transform: scale3d(0.7, 1, 1);
+  transition: transform 0.42s, opacity 0.4s;
+}
+
+.bttn:hover::before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
 .triangle {
   position: relative;
   display: flex;
@@ -207,13 +262,15 @@ p {
   transition: all 0.3s ease;
 }
 
-.bttn-all-services {
+.primary-bttn {
   color: black;
+  font-size: 18px;
   margin-top: 5px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
 }
-.bttn-all-services:hover {
+.primary-bttn:hover {
   color: #756aee;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
 }
