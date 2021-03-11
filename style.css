@@ -137,7 +137,7 @@ footer h3 {
   padding: 70px 60px 40px;
 }
 
-.company-contact div:not(:last-child){
+.company-contact> div:not(:last-child){
   margin-bottom: 1rem;
 }
 
@@ -146,6 +146,25 @@ footer h3 {
   padding: 21px 0;
   font-weight: 400;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.company-info>.company-info--item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-info>.company-info--item a{
+  display: inline-block;
+}
+
+.company-info>.company-info--item> .item--left{
+  margin-right: 3rem;
+  width: 80px;
+}
+
+.company-info>.company-info--item> .item--right{
+  /* flex: 0 1 auto; */
 }
 
 .company-info--title{
