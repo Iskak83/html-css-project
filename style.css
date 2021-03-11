@@ -75,6 +75,48 @@ header {
   border-bottom-color: #756aee;
 }
 
+.btn {
+  color: #ffffff;
+  background-color: #756aee;
+  border: solid 2px;
+  min-width: 200px;
+  padding: 17px 33px 15px;
+  font-size: 14px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.banner-container {
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  width: 80%;
+}
+
+.banner-overlay-text {
+  position: absolute;
+}
+
+.banner-overlay-text h1 {
+  font-size: 72px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.banner-overlay-text p {
+  font-size: 14px;
+  margin: auto;
+  margin-bottom: 10px;
+  max-width: 640px;
+  text-transform: none;
+}
+
 /* all-services section */
 
 .all-services {
