@@ -85,6 +85,9 @@ header {
   margin-top: 15px;
   text-align: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-image {
@@ -93,9 +96,6 @@ header {
 
 .banner-overlay-text {
   position: absolute;
-  top: 38%;
-  left: 31%;
-  text-align: center;
 }
 
 .banner-overlay-text h1 {
