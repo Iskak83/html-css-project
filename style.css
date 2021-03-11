@@ -73,8 +73,12 @@ header {
 .btn {
   color: #ffffff;
   background-color: #756aee;
-  border: solid 1px #756aee;
-  padding: 4px;
+  border: solid 2px;
+  min-width: 200px;
+  padding: 17px 33px 15px;
+  font-size: 14px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .banner-container {
@@ -89,20 +93,23 @@ header {
 
 .banner-overlay-text {
   position: absolute;
-  top: 36%;
-  left: 13%;
+  top: 38%;
+  left: 31%;
+  text-align: center;
 }
 
-.banner-overlay-text,
-h1 {
-  font-size: 5rem;
+.banner-overlay-text h1 {
+  font-size: 72px;
+  margin: auto;
   margin-bottom: 10px;
 }
 
-.banner-overlay-text,
-p {
-  font-size: 1rem;
+.banner-overlay-text p {
+  font-size: 14px;
+  margin: auto;
   margin-bottom: 10px;
+  max-width: 640px;
+  text-transform: none;
 }
 
 /* all-services section */
