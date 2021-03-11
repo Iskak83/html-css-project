@@ -75,7 +75,7 @@ header {
   border-bottom-color: #756aee;
 }
 
-.btn {
+/* .btn {
   color: #ffffff;
   background-color: #756aee;
   border: solid 2px;
@@ -84,7 +84,7 @@ header {
   font-size: 14px;
   margin: auto;
   cursor: pointer;
-}
+} */
 
 .section-head {
   font-size: 45px;
