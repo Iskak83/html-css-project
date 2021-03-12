@@ -1,8 +1,16 @@
+:root {
+  --primary: #7569EE;
+  --secondary: #282736;
+  --text-secondary: #9B9B9B;
+  --bg: #1B1929;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 *::before,
 *::after {
@@ -29,6 +37,13 @@ header {
   background-color: white;
   box-shadow: 1px 1px 2px rgb(226, 222, 223);
 }
+
+
+
+.secondary-txt {
+  color: var(--text-secondary)
+}
+
 #top-navbar {
   width: 100%;
   height: 55px;
@@ -315,4 +330,194 @@ p {
 .primary-bttn:hover {
   color: #756aee;
   transition: all 0.3s ease-in-out;
+}
+
+
+/** ***************************************** */
+/** Layout                                    */
+/** ***************************************** */
+.container, 
+.row { 
+  display: flex;
+}
+
+.col{
+  flex-direction: column;
+  flex: 1;
+}
+
+/** ***************************************** */
+/** Text                                      */
+/** ***************************************** */
+ul{
+  list-style-type: none;
+}
+
+.txt-caps{
+  text-transform: uppercase;
+}
+
+/** ***************************************** */
+/** Buttons                                   */
+/** ***************************************** */
+.btn, .form-input{
+  border: none;
+  padding: 17px 33px 15px;
+}
+
+.btn-primary{
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/** ***************************************** */
+/** Footer                                    */
+/** ***************************************** */
+footer, footer a {
+  background-color: var(--bg);
+  color: #ffffff;
+}
+
+footer h3 {
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: .015em;
+  font-size: 32px;
+  line-height: 1.3125;
+  margin-bottom: 8px;
+}
+
+.footer-col{
+  padding: 70px 60px 40px;
+}
+
+.company-contact> div:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.company-info>.company-info--item, 
+.offer-list>.offer-list--item{
+  padding: 21px 0;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.company-info>.company-info--item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-info>.company-info--item a{
+  display: inline-block;
+}
+
+.company-info>.company-info--item> .item--left{
+  margin-right: 3rem;
+  width: 80px;
+}
+
+.company-info>.company-info--item> .item--right{
+  /* flex: 0 1 auto; */
+}
+
+.company-info--title{
+  color: #9f97f9;
+  font-size: 1rem;
+}
+
+form>input.form-input,
+form>textarea.form-input{
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+form>input.form-input::placeholder,
+form>textarea.form-input::placeholder{
+  color: #ffffff
+}
+
+.company-offer h3{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 1.5rem;
+  margin-bottom: 0;
+}
+
+.company-offer>.offer-list>.offer-list--item>a{
+  position: relative;
+  display: block;
+  font-size: 21px;
+  line-height: 1.71429;
+}
+
+.company-offer>.offer-list>.offer-list--item>a>span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 38%;
+  right: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.company-offer>.offer-list>.offer-list--item>a>span::before,
+.company-offer>.offer-list>.offer-list--item>a>span::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  transition: all .2s ease-in-out;
+}
+
+.company-offer>.offer-list>.offer-list--item>a>span::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 10px 6px 0;
+  border-color: transparent rgba(255, 255, 255, 0.1) transparent transparent;
+}
+
+.company-offer>.offer-list>.offer-list--item>a>span::after {
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/** ***************************************** */
+/** Social Icons                              */
+/** ***************************************** */
+
+ul.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+li.social-item>a.icon {
+  position: relative;
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  font-size: 25px;
+  line-height: 56px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #333144;
+  transition: color .3s;
+  z-index: 1;
+}
+
+li.social-item>a.icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #333144;
+    pointer-events: none;
+    transition: transform 0.2s, opacity 0.3s;
+    z-index: -1;
 }
