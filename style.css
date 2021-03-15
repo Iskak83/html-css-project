@@ -580,7 +580,7 @@ li.social-item > a.icon {
   z-index: 1;
 }
 
-li.social-item > a.icon::after {
+li.social-item>a.icon::after {
   content: '';
   position: absolute;
   top: 0;
