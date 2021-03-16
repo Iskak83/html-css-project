@@ -329,50 +329,117 @@ p {
 }
 
 /** ***************************************** */
-/**  YEARS-OF-SECTION                                   */
+/**  YEARS-OF-EXPERIENCE SECTION                                   */
 /** ***************************************** */
+
 .years-of-exp-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
+
 .yoe-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 60px;
 }
-.yoe-partOne,
-.yoe-accomplishments {
-  width: 400px;
-}
+/**  PART ONE                                  */
 .yoe-partOne {
-  height: 250px;
   width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.yoe-partOne p {
-  font-size: 60vh;
-  margin-top: 120px;
-  color: #6c65bb;
+.yoe-partOne p{
+  font-size: 400px;
+  color: #665ebd;
   letter-spacing: -0.07em;
-  padding: 0;
-}
-.yoe-partOne {
+  font-weight: 600;
 }
 
+/**  PART TWO                                 */
 .yoe-partTwo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 0 10px 0 60px;
   width: 300px;
-  height: 250px;
-  height: 43vh;
+  height: 300px;
+  /* border: solid 0.25px gray; */
+}
+.yoe-partTwo h1{
+  padding: 0 35px;
+  font-size: 28px;
+  font-weight: 500;
+  border-left: solid 4px rgb(208, 208, 208);
+}
+.yoe-partTwo p{
+  font-size: 15px;
+  text-align: left;
+  margin-left: 0%;
+  color: rgb(155, 153, 153);
 }
 .second-primary-bttn {
 }
+
+/**  ACCOMPLISHMENTS                                   */
+.accomplishments{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.accomplishments div{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 200px;
+  height: 150px;
+ 
+}
+.accomplishments h2{
+  letter-spacing: 9px;
+  font-size: 110px;
+  font-weight: 400;
+}
+.app-developed span {
+  font-size: 70px;
+  letter-spacing: 0px;
+  margin-left: -5px;
+}
+
+.accomplishments p{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(155, 153, 153);
+  font-size: 16px;
+  margin-top: -30px;
+}
+.app-developed h2, .consultans h2{
+  margin-top: -30px;
+
+}
+
+.app-developed, .consultans{
+  justify-content: flex-start;
+  padding: 0px;
+  border-bottom: solid 0.5px rgb(228, 226, 226);
+}
+.awards-won, .employees{
+  justify-content: flex-end;
+}
+.app-developed, .awards-won{
+  border-right: solid 0.5px  rgb(228, 226, 226);
+}
+.employees h2{
+  margin-left: 25px;
+}
+
+/**  YOE-LINKS                                  */
 .yoe-links {
   display: flex;
   flex-direction: row;
@@ -403,6 +470,8 @@ p {
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
+
+
 /** ***************************************** */
 /** Layout                                    */
 /** ***************************************** */
