@@ -346,7 +346,7 @@ p {
 
 .latest-projects p {
   font-size: 14px;
-  width: 30%;
+  width: 32%;
   margin-bottom: 30px;
   letter-spacing: 1.5px;
   text-transform: none;
@@ -385,6 +385,19 @@ p {
   width: 1px;
   background-color: #919090;
   margin: 3px 15px 0px;
+}
+
+.project-cards-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  width: 350px;
+  height: 300px;
+  margin: 15px;
+  background-color: #919090;
+  border: solid black 2px;
 }
 
 /** ***************************************** */
