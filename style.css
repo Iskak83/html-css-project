@@ -566,8 +566,8 @@ footer h3 {
   font-size: 1rem;
 }
 
-form > input.form-input,
-form > textarea.form-input {
+form>input.form-input,
+form>textarea.form-input {
   background: rgba(255, 255, 255, 0.06);
   border: none;
   margin-bottom: 12px;
@@ -585,14 +585,14 @@ form > textarea.form-input::placeholder {
   margin-bottom: 0;
 }
 
-.company-offer > .offer-list > .offer-list--item > a {
+.company-offer>.offer-list>.offer-list--item > a {
   position: relative;
   display: block;
   font-size: 21px;
   line-height: 1.71429;
 }
 
-.company-offer > .offer-list > .offer-list--item > a > span {
+.company-offer>.offer-list>.offer-list--item>a>span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -605,15 +605,15 @@ form > textarea.form-input::placeholder {
   padding-right: 6px;
 }
 
-.company-offer > .offer-list > .offer-list--item > a > span::before,
-.company-offer > .offer-list > .offer-list--item > a > span::after {
+.company-offer > .offer-list>.offer-list--item>a>span::before,
+.company-offer > .offer-list>.offer-list--item>a>span::after {
   display: inline-block;
   vertical-align: middle;
   content: '';
   transition: all 0.2s ease-in-out;
 }
 
-.company-offer > .offer-list > .offer-list--item > a > span::before {
+.company-offer>.offer-list>.offer-list--item>a> span::before {
   width: 0;
   height: 0;
   border-style: solid;
@@ -621,7 +621,7 @@ form > textarea.form-input::placeholder {
   border-color: transparent rgba(255, 255, 255, 0.1) transparent transparent;
 }
 
-.company-offer > .offer-list > .offer-list--item > a > span::after {
+.company-offer>.offer-list>.offer-list--item > a > span::after {
   width: 0;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -636,7 +636,7 @@ ul.social-links {
   justify-content: space-between;
 }
 
-li.social-item > a.icon {
+li.social-item>a.icon {
   position: relative;
   text-align: center;
   width: 56px;
@@ -649,7 +649,7 @@ li.social-item > a.icon {
   z-index: 1;
 }
 
-li.social-item > a.icon::after {
+li.social-item>a.icon::after {
   content: '';
   position: absolute;
   top: 0;
