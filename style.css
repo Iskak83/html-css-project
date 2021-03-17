@@ -380,15 +380,15 @@ p {
 
 .project-cards-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-.project-card {
+.project-card-img {
   width: 350px;
   height: 300px;
   margin: 15px;
-  background-color: #919090;
-  border: solid black 2px;
 }
 /** ***************************************** */
 /**  YEARS-OF-EXPERIENCE SECTION                                   */
