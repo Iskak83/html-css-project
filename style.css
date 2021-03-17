@@ -520,12 +520,12 @@ p {
   margin-top: -30px;
 }
 .app-developed h2,
-.consultans h2 {
+.consultants h2 {
   margin-top: -30px;
 }
 
 .app-developed,
-.consultans {
+.consultants {
   justify-content: flex-start;
   padding: 0px;
   border-bottom: solid 0.5px rgb(228, 226, 226);
